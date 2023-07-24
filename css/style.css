@@ -11,13 +11,17 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a{
-  text-decoration: none;
+h2{
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+h3{
+  font-size: 1rem
 }
 header nav, main{
-  color: var(--white-bkgrnd);
+  background-color: var(--white-bkgrnd);
 }
 /* DEBUG */
 .debug-box{
@@ -28,6 +32,7 @@ header nav, main{
 .debug{
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.534);
+  min-height: 50px;
 }
 /* FLEX */
   .d-flex{
@@ -43,22 +48,28 @@ header nav, main{
 .big-container{
   width: 78%;
   margin: 0px auto;
+  min-width: 1300px;
 }
 .smll-container{
+  min-width: 1100px;
   width: 68%;
   margin: 0px auto;
 }
 /* BUTTON */
-.btn-blue{
+button{
   background-color: var(--blue-bkgrnd);
+  padding: 15px 8px;
+  cursor: pointer;
+} 
+button a{
   color: var(--white-txt);
-  padding: 5px 15px;
+  text-decoration: none;
 }
 /* HEADER */
 header{
   background-color: var(--celestine-bkgrnd);
 }
-  /* HEADER NAV */
+   /* HEADER NAV */
 header nav{
   background-color: var(--white-bkgrnd);
   justify-content: space-between;
@@ -72,12 +83,24 @@ header nav .logo img{
   width: 100%;
   padding: 20px 10px;
 }
-header nav a{
+header nav div{
+
   line-height: 80px;
   margin: 20px;
-  color: var(--black-txt);
 }
-  /* HEADER JUMBOTRON */
+header nav a{
+  color: var(--black-txt);
+  text-decoration: none;
+}
+header nav div button{
+  margin: 0;
+  padding: 10px;
+}
+header nav div button a{
+  color: var(--white-txt);
+}
+
+    /* HEADER JUMBOTRON */
 header .jumbo h1 {
   font-size: 5rem;
   margin: 40px 0px;
@@ -91,6 +114,9 @@ header .jumbo .jumbo-txt i{
   font-size: 3rem;
   padding: 10px;
 }
+header .jumbo .jumbo-txt button{
+  width: 70%;
+}
 header .jumbo .jumbo-img{
   width: 650px;
   height: 350px;
@@ -98,11 +124,65 @@ header .jumbo .jumbo-img{
 }
 header .jumbo .jumbo-img img{
   width: 800px;
-  height: 430px;
+  height: 470px;
 }
 /* MAIN */
 main{
   margin: 80px;
 }
+main h1{
+  font-size: 2.5rem;
+  margin: 25px 0px;
+}
+    /* PLANE BUSINESS */
+main section div.billing-choice span{
+  margin-right: 40px;
+  display: inline-block;
+}
+main section .box-card-row{
+  justify-content: space-between;
+}
+main section .box-card-row .card-pln-bsnss{
+  width: 30%;
+}
+main section .card-pln-bsnss{
+  margin: 20px 0px;
+  border: 1px solid #DEDEDE;
+}
+main section .card-pln-bsnss .title-card{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #DEDEDE;
 
+}
+section .card-pln-bsnss main-card,
+h2 ,h3 ,p ,button, ul, li{
+  margin: 30px 20px;
+}
+section .card-pln-bsnss main-card,
+p , ul, li{
+  font-size: 0.85rem;
+}
+/* section .card-pln-bsnss ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+section .card-pln-bsnss ul .ul-check li::before{
+  content: "&#10004";
+} */
+.card-pln-bsnss .main-card .price{
+  font-weight: bolder;
+}
+.card-pln-bsnss .main-card .price, .mod-service{
+  font-size: 0.75rem;
+}
+.card-pln-bsnss .main-card .mod-service{
+  color: rgb(146, 146, 146);
+}
+.card-pln-bsnss .main-card .ottom-txt-card .card-bttm-sx{
+  width: calc(100% - 500px);
+}
 /* FOOTER */
