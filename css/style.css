@@ -1,21 +1,30 @@
 /* GENERAL */
 :root{
+  --white-bkgrnd: white;
   --celestine-bkgrnd: #B4D0E7;
   --blue-bkgrnd: #0061FF;
   --white-txt: white;
+  --black-txt: black;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
+header nav, main{
+  color: var(--white-bkgrnd);
+}
 /* DEBUG */
 .debug-box{
   border: 1px solid black;
-  background-color: rgba(255, 0, 0, 0.541);
+  background-color: rgba(255, 0, 0, 0.295);
 }
-.debug > div{
+.debug{
   border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.534);
 }
 /* FLEX */
   .d-flex{
@@ -37,9 +46,40 @@
   margin: 0px auto;
 }
 /* BUTTON */
-
+.btn-blue{
+  background-color: var(--blue-bkgrnd);
+  color: var(--white-txt);
+  padding: 5px 15px;
+}
 /* HEADER */
-
+  /* NAV */
+  header nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--white-bkgrnd);
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .sx-nav-box, .dx-nav-box{
+    margin: 5px 15px;
+  }
+  header nav .logo img{
+    height: 100%;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  header nav a{
+    line-height: 80px;
+    margin: 20px;
+    color: var(--black-txt);
+  }
+  /* JUMBOTRON */
+  header > div{
+    height: 350px;
+    background-color: var(--celestine-bkgrnd);
+  }
 /* MAIN */
 
 /* FOOTER */
