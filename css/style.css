@@ -6,6 +6,7 @@
   --white-txt: white;
   --black-txt: black;
   --light-grey: #DEDEDE;
+  --margin-def: 180px 0px;
 }
 *{
   margin: 0;
@@ -25,6 +26,9 @@ h3{
 }
 p{
   margin: 10px 0px;
+}
+li{
+  padding: 20px 0px;
 }
 header nav, main{
   background-color: var(--white-bkgrnd);
@@ -66,7 +70,7 @@ header nav, main{
 button{
   background-color: var(--blue-bkgrnd);
   color: var(--white-txt);
-  padding: 15px 8px;
+  padding: 8px 4px;
   cursor: pointer;
 } 
 button a{
@@ -86,13 +90,15 @@ header nav{
 header nav .sx-nav-box, .dx-nav-box{
   margin: 5px 15px;
 }
+header nav .logo{
+  height: 50px;
+  width: 130px;
+
+}
 header nav .logo img{
-  height: 100%;
-  width: 100%;
-  padding: 20px 10px;
+  object-fit: contain;
 }
 header nav div{
-
   line-height: 80px;
   margin: 20px;
 }
@@ -137,11 +143,15 @@ header .jumbo .jumbo-img img{
 /* MAIN */
 main h1{
   font-size: 2.5rem;
-  margin: 25px 0px;
+  margin: 50px 0px;
 }
     /*  SECTION PLANE BUSINESS */
+section.plane-business{
+  margin: var(--margin-def);
+}
+
 main section div.billing-choice span{
-  margin-right: 40px;
+  margin: 40px 40px 40px 0px;
   display: inline-block;
 }
 main section .box-card-row{
@@ -165,15 +175,6 @@ section .card-pln-bsnss main-card,
 p , ul, li{
   font-size: 0.85rem;
 }
-/* section .card-pln-bsnss ul{
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-
-}
-section .card-pln-bsnss ul .ul-check li::before{
-  content: "&#10004";
-} */
 .card-pln-bsnss .main-card .price{
   font-weight: bolder;
 }
@@ -183,13 +184,22 @@ section .card-pln-bsnss ul .ul-check li::before{
 .card-pln-bsnss .main-card .mod-service{
   color: rgb(146, 146, 146);
 }
+.card-pln-bsnss .main-card {
+  width: 90%;
+  margin: 20px auto;
+}
+.card-pln-bsnss .bottom-txt-card{
+  justify-content: space-between;
+  padding: 20px;
+}
 .card-pln-bsnss .bottom-txt-card .card-bttm-sx{
   width: calc(100% - 350px);
 }
+
     /* DIV TXT&IMG */
 div .img-txt{
   width: 100%;
-  margin: 70px 0px;
+  margin: var(--margin-def);
 }
 div .img-txt div{
   padding: 60px 50px;
@@ -199,7 +209,9 @@ div .img-txt img{
   height: 500px;
 }
     /* SECTION CARD */
-
+section.card-section{
+  margin: var(--margin-def);
+}
 section .card-box .box-card-row{
   width: 100%;
 }
@@ -211,13 +223,32 @@ section .card-box .box-card-row .card img{
   width: 100%;
   height: 50%;
 }
+    /* P & LINK */
+.p-link{
+  margin: var(--margin-def);
+}
     /* SECTION PARTNER COMPANIES */
 section .square-box{
   width: 100%;
 }
     /* FAQ */
+section.faq-box{
+  margin: var(--margin-def);
+}
 section.faq-box div.hide-box{
   display: none;
+}
+section.faq-box .faq-row{
+  border-top: 1px solid var(--light-grey);
+  position: relative;
+}
+section.faq-box .faq-row i{
+  position: absolute;
+  right: 35px;
+  top: 30px;
+}
+section.faq-box .faq-row:last-child{
+  border-bottom: 1px solid var(--light-grey);
 }
 section.faq-box .faq-row:hover div.hide-box{
   display: block;
