@@ -5,6 +5,7 @@
   --blue-bkgrnd: #0061FF;
   --white-txt: white;
   --black-txt: black;
+  --light-grey: #DEDEDE;
 }
 *{
   margin: 0;
@@ -52,13 +53,13 @@ header nav, main{
   }
 /* CONTAINER */
 .big-container{
-  width: 85%;
+  width: 75%;
   margin: 0px auto;
   min-width: 1200px;
 }
 .smll-container{
   min-width: 1000px;
-  width: 75%;
+  width: 62%;
   margin: 0px auto;
 }
 /* BUTTON */
@@ -134,9 +135,6 @@ header .jumbo .jumbo-img img{
   height: 420px;
 }
 /* MAIN */
-main{
-  margin: 80px;
-}
 main h1{
   font-size: 2.5rem;
   margin: 25px 0px;
@@ -154,13 +152,13 @@ main section .box-card-row .card-pln-bsnss{
 }
 main section .card-pln-bsnss{
   margin: 20px 0px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid var(--light-grey);
 }
 main section .card-pln-bsnss .title-card{
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border-bottom: 1px solid #DEDEDE;
+  border-bottom: 1px solid var(--light-grey);
 
 }
 section .card-pln-bsnss main-card,
@@ -213,6 +211,40 @@ section .card-box .box-card-row .card img{
   width: 100%;
   height: 50%;
 }
-/* SECTION PARTNER COMPANIES */
-
+    /* SECTION PARTNER COMPANIES */
+section .square-box{
+  width: 100%;
+}
+    /* FAQ */
+section.faq-box div.hide-box{
+  display: none;
+}
+section.faq-box .faq-row:hover div.hide-box{
+  display: block;
+}
 /* FOOTER */
+footer{
+  background-color: black;
+  color: var(--white-txt);
+  margin-bottom: 0px;
+}
+footer .sect-column{
+  justify-content: space-between;
+  min-width: none;
+  min-height: auto;
+}
+footer .sect-column .col-txt{
+  margin: 100px 0px;
+  width: calc(100% / 5);
+}
+.foot-section{
+  height: 120px;
+}
+.foot-section .language{
+  width: 10%;
+  height: 100%;
+  border-top: 1px solid var(--light-grey);
+}
+.foot-section .language p{
+  margin: 30px 0px;
+}
