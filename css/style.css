@@ -30,6 +30,10 @@ p{
 li{
   padding: 20px 0px;
 }
+div.ltl-border{
+  width: 25%;
+  border-top: 1px solid var(--light-grey);
+}
 header nav, main{
   background-color: var(--white-bkgrnd);
 }
@@ -87,36 +91,43 @@ header nav{
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
 }
-
+header nav div ul{
+  height: 100%;
+}
 header nav div.sx-nav-box li{
+  height: 100%;
   list-style: none;
   padding: 0;
-  margin: 10px;
+  margin: 0px 10px;
+  align-items: center;
 }
 header nav div.dx-nav-box li{
   list-style: none;
   padding: 0;
-  margin: 10px;
+  margin: 0px 10px;
+  align-items: center;
 }
 header nav .logo img{
   object-fit: contain;
-}
-header nav div{
-  line-height: 80px;
 }
 header nav a{
   color: var(--black-txt);
   text-decoration: none;
 }
+header nav li:hover{
+  border-bottom: 1px solid var(--black-txt);
+}
 header nav div button{
-  margin: 0;
   padding: 5px 15px;
 }
 header nav div button a{
+
   color: var(--white-txt);
 }
 
@@ -246,6 +257,57 @@ section .square-box{
   width: calc(100% / 3);
   height: calc(100vw / 3);
 }
+.square-box .square .ltl-square{
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.square-box .square .ltl-square svg{
+  filter: invert(1);
+  height: 100%;
+  width: 100%;
+}
+.square .ltl-square.companies-1{
+  background-color: #A2D39B;  
+}
+.square .ltl-square:hover{
+  border: 20px inset rgba(255, 255, 255, 0.226);
+}
+.square .ltl-square.companies-2{
+  background-color: #61082B;
+}
+.square .ltl-square.companies-3{
+  background-color: #0092CC;
+}
+.square .ltl-square.companies-4{
+  background-color: #F41B1B;
+}
+.square .ltl-square.companies-5{
+  background-color: #D5001F;
+}
+.square .ltl-square.companies-6{
+  background-color: #B4D0E7;
+} 
+.square .ltl-square.companies-7{
+  background-color: #0D2481;
+}
+.square .ltl-square.companies-8{
+  background-color: #FFD830;
+}
+.square-box .square.big-square{
+  padding: 40px;
+  overflow-y: auto;
+}
+.square-box .square.big-square{
+  background-color: #F5F5F5;
+}
+.square-box .square.big-square svg{
+  width: 100%;
+  height: 100%;
+}
+
     /* FAQ */
 section.faq-box{
   margin: var(--margin-def);
