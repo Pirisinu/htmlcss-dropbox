@@ -86,21 +86,27 @@ header nav{
   background-color: var(--white-bkgrnd);
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-header nav .sx-nav-box, .dx-nav-box{
-  margin: 5px 15px;
-}
-header nav .logo{
-  height: 50px;
-  width: 130px;
 
+header nav div.sx-nav-box li{
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+header nav div.dx-nav-box li{
+  list-style: none;
+  padding: 0;
+  margin: 10px;
 }
 header nav .logo img{
   object-fit: contain;
 }
 header nav div{
   line-height: 80px;
-  margin: 20px;
 }
 header nav a{
   color: var(--black-txt);
@@ -108,7 +114,7 @@ header nav a{
 }
 header nav div button{
   margin: 0;
-  padding: 10px;
+  padding: 5px 15px;
 }
 header nav div button a{
   color: var(--white-txt);
@@ -116,9 +122,13 @@ header nav div button a{
 
     /* HEADER JUMBOTRON */
 header .jumbo h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 40px 0px;
   font-weight: bold;
+  padding: 80px 0px;
+}
+header .jumbo{
+  margin-top: 100px;
 }
 header .jumbo .jumbo-txt{
   width: 30%;
@@ -156,6 +166,7 @@ main section div.billing-choice span{
 }
 main section .box-card-row{
   justify-content: space-between;
+  margin-top: 30px;
 }
 main section .box-card-row .card-pln-bsnss{
   width: 30%;
@@ -231,6 +242,10 @@ section .card-box .box-card-row .card img{
 section .square-box{
   width: 100%;
 }
+.square-box .square{
+  width: calc(100% / 3);
+  height: calc(100vw / 3);
+}
     /* FAQ */
 section.faq-box{
   margin: var(--margin-def);
@@ -267,6 +282,13 @@ footer .sect-column{
 footer .sect-column .col-txt{
   margin: 100px 0px;
   width: calc(100% / 5);
+}
+footer .sect-column .col-txt a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  font-weight: 300;
 }
 .foot-section{
   height: 120px;
