@@ -33,6 +33,7 @@ li{
 div.ltl-border{
   width: 25%;
   border-top: 1px solid var(--light-grey);
+  margin: 15px 0px;
 }
 header nav, main{
   background-color: var(--white-bkgrnd);
@@ -121,10 +122,14 @@ header nav a{
   text-decoration: none;
 }
 header nav li:hover{
-  border-bottom: 1px solid var(--black-txt);
+  text-decoration: underline;
+  text-underline-offset: 40px;
 }
 header nav div button{
   padding: 5px 15px;
+}
+header nav button:hover{
+  border:10px inset rgba(255, 255, 255, 0.178);
 }
 header nav div button a{
 
@@ -241,12 +246,16 @@ section .card-box .box-card-row .card{
   width: calc(100% / 3);
   margin: 10px;
 }
+section .card-box .box-card-row .card:hover{
+  border-radius: 15px;
+}
 section .card-box .box-card-row .card img{
   width: 100%;
   height: 50%;
 }
     /* P & LINK */
-.p-link{
+
+main .smll-container .p-link{
   margin: var(--margin-def);
 }
     /* SECTION PARTNER COMPANIES */
@@ -262,17 +271,20 @@ section .square-box{
   height: 50%;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+}
+.square-box .square .ltl-square .icon-companies{
+  height: 80%;
+  width: 80%;
 }
 .square-box .square .ltl-square svg{
   filter: invert(1);
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 .square .ltl-square.companies-1{
   background-color: #A2D39B;  
 }
-.square .ltl-square:hover{
+/*  */.square .ltl-square:hover{
   border: 20px inset rgba(255, 255, 255, 0.226);
 }
 .square .ltl-square.companies-2{
